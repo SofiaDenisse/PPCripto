@@ -2,7 +2,7 @@ import './Principal.css'
 import cvIcon from '../../assets/images/cv.png'
 import information from '../../assets/images/information.png'
 import keyIcon from '../../assets/images/key.png'
-import { CV } from './CV'
+import { CV } from './Cv'
 import { About } from './About'
 import { Pkey } from './Pkey'
 import { use, useState } from 'react';
