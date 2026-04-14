@@ -1,0 +1,14 @@
+.contenedor{
+    position: relative;
+}
+
+.bg-rectangulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #bfdbfe; /* Tailwind's blue-200 */
+    z-index: 0;
+}
+
