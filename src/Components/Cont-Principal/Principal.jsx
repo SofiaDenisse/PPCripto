@@ -2,10 +2,12 @@ import './Principal.css'
 import cvIcon from '../../assets/images/cv.png'
 import information from '../../assets/images/information.png'
 import keyIcon from '../../assets/images/key.png'
+import criptoIcon from '../../assets/images/criptos.png'
 import { CV } from './Cv'
+import {Cripto} from './Cripto'
 import { About } from './About'
 import { Pkey } from './Pkey'
-import { use, useState } from 'react';
+import { useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
@@ -58,6 +60,7 @@ export const Principal = () => {
             case 'cv': return <CV />;
             case 'about': return <About />;
             case 'key': return <Pkey />;
+            case 'cripto': return <Cripto />;
             default: return null;
         }
     };
@@ -81,7 +84,7 @@ export const Principal = () => {
                             Estudiante de ingenieria en sistemas computacionales
                         </p>
 
-                        <div className="grid md:grid-cols-3 gap-8">
+                        <div className="grid md:grid-cols-4 gap-8">
                             {/* BOTÓN CV */}
                             <div onClick={() => setModalAbierta('cv')} className="group cursor-pointer flex flex-col items-center">
                                 <div className="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
@@ -104,6 +107,14 @@ export const Principal = () => {
                                     <img src={keyIcon} alt="Key" className="w-full h-full object-contain" />
                                 </div>
                                 <span className="font-mono text-gray-600">P-Key</span>
+                            </div>
+
+                            {/* BOTÓN CRIPTO */}
+                            <div onClick={() => setModalAbierta('cripto')} className="group cursor-pointer flex flex-col items-center">
+                                <div className="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+                                    <img src={criptoIcon} alt="Cripto" className="w-full h-full object-contain" />
+                                </div>
+                                <span className="font-mono text-gray-600">Criptografia</span>
                             </div>
 
                         </div>
