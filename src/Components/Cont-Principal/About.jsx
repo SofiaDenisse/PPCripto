@@ -1,8 +1,8 @@
 import React from 'react'
 import './About.css'
-import crochets from './cardimages/crochets.png'
+import crochets from './cardimages/crochets.jpeg'
 import videogame from './cardimages/videogame.png'
-import boombox from './cardimages/boombox.png'
+import origamis from './cardimages/origami.jpeg'
 import lucho from './cardimages/lucho.jpeg'
 import canela from './cardimages/canela.jpeg'
 
@@ -25,7 +25,7 @@ export const About = () => {
             <div className='flex flex-wrap justify-center'>
                 {/*CROCHETING*/}
                 <div className='flex flex-col bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 hover:shadow-xl'>
-                    <img src={crochets} alt="knitting" className='scale-80' />
+                    <img src={crochets} alt="knitting" className='scale-80 rounded-2xl' />
                     <h2 className='montserrat-1 font-bold text-center px-2 pb-5'>Crocheting</h2>
                     <div className='bg-fuchsia-700 p-3 text-center'>
                         <p className='text-white montserrat-1 font-light text-xs'>Hacer crochet me ayuda a concentrarme y crear personajes lindos</p>
@@ -34,7 +34,12 @@ export const About = () => {
 
                 {/*VIDEOJUEGOS*/}
                 <div className='flex flex-col bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 hover:shadow-xl'>
-                    <img src={videogame} alt="knitting" className='scale-80' />
+                    <img src={videogame} alt="knitting" className='scale-80 rounded-2xl' />
+                    <a href="https://medal.tv/es/games/valorant/clips/ln2hvnPRlj38mr8ZN?invite=cr-MSxZemYsNjI1MzA1MDA4" target="_blank" className='mb-7 mt-4 text-center'>
+                        <span className="bg-purple-100 text-purple-600 rounded-full text-xs font-bold uppercase tracking-widest">
+                            Mirame Jugar !!
+                        </span>
+                    </a>
                     <h2 className='montserrat-1 font-bold text-center px-2 pb-5'>Videojuegos</h2>
                     <div className='bg-fuchsia-700 p-3 text-center'>
                         <p className='text-white montserrat-1 font-light text-xs'>Me encanta jugar videojuegos con amigos y sentir la adrenalina</p>
@@ -43,10 +48,10 @@ export const About = () => {
 
                 {/*BAILAR Y CANTAR*/}
                 <div className='flex flex-col bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 hover:shadow-xl'>
-                    <img src={boombox} alt="knitting" className='scale-80' />
-                    <h2 className='montserrat-1 font-bold text-center px-2 pb-5'>Bailar y Cantar</h2>
+                    <img src={origamis} alt="knitting" className='scale-80 rounded-2xl' />
+                    <h2 className='montserrat-1 font-bold text-center px-2 pb-5'>Origami</h2>
                     <div className='bg-fuchsia-700 p-3 text-center'>
-                        <p className='text-white montserrat-1 font-light text-xs'>Actualmente creo que es mi hobby favorito, me ayuda a liberar el estrés</p>
+                        <p className='text-white montserrat-1 font-light text-xs'>Hacer dragones de papel es una de mis actividades favoritas</p>
                     </div>
                 </div>
             </div>
